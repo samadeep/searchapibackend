@@ -5,5 +5,6 @@ public enum Sources {
     STACKOVERFLOW,
     GOOGLE,
     BING,
-    YOUTUBE
+    YOUTUBE,
+    CONFLUENCE
 }
