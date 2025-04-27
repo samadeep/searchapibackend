@@ -3914,3 +3914,45 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2025-04-27 19:23:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-04-27 19:23:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-04-27 19:23:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-27 19:35:24 [main] INFO  c.s.searchapi.SearchapiApplication - Starting SearchapiApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 37201 (/Users/samadeepsengupta/IdeaProjects/searchapi/target/searchapi-0.0.1-SNAPSHOT.jar started by samadeepsengupta in /Users/samadeepsengupta/IdeaProjects/searchapi)
+2025-04-27 19:35:24 [main] DEBUG c.s.searchapi.SearchapiApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-27 19:35:24 [main] INFO  c.s.searchapi.SearchapiApplication - The following 1 profile is active: "dev"
+2025-04-27 19:35:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-27 19:35:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2025-04-27 19:35:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-27 19:35:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-27 19:35:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-27 19:35:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-27 19:35:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1081 ms
+2025-04-27 19:35:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-27 19:35:25 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64c25a62
+2025-04-27 19:35:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-27 19:35:26 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/searchapi'
+2025-04-27 19:35:26 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-27 19:35:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-27 19:35:26 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-27 19:35:26 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-27 19:35:26 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-27 19:35:26 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-27 19:35:26 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 19:35:26 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-27 19:35:27 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-04-27 19:35:27 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@665574fb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3eb7ff78, org.springframework.security.web.context.SecurityContextHolderFilter@c4bb119, org.springframework.security.web.header.HeaderWriterFilter@31b4c003, org.springframework.web.filter.CorsFilter@6b83ec49, org.springframework.security.web.authentication.logout.LogoutFilter@106f0051, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7c74ef4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@283595db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@225b460a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50ad5625, org.springframework.security.web.access.ExceptionTranslationFilter@3304362e, org.springframework.security.web.access.intercept.AuthorizationFilter@77d7d2d0]
+2025-04-27 19:35:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-27 19:35:27 [main] INFO  c.s.searchapi.SearchapiApplication - Started SearchapiApplication in 3.243 seconds (process running for 3.548)
+2025-04-27 20:09:22 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s795ms).
+2025-04-27 20:34:14 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m22s89ms).
+2025-04-27 20:57:41 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m57s750ms).
+2025-04-27 21:14:55 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m13s233ms).
+2025-04-27 21:20:37 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m41s941ms).
+2025-04-27 21:27:58 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s435ms).
+2025-04-27 21:32:36 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-27 21:32:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-27 21:32:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-04-27 21:32:36 [http-nio-8080-exec-1] INFO  c.s.s.controller.SearchController - Received GET search request - query: spring boot, page: 1, size: 10, sources: [GITHUB, STACKOVERFLOW], facets: [language, type]
+2025-04-27 21:32:36 [http-nio-8080-exec-1] INFO  c.s.s.service.impl.SearchServiceImpl - Starting search with request: com.search.searchapi.models.SearchRequest@44ad1fe0
+2025-04-27 21:32:36 [http-nio-8080-exec-1] INFO  c.s.s.service.impl.SearchServiceImpl - Search completed successfully in 1ms with 4 results
+2025-04-27 21:32:36 [http-nio-8080-exec-1] INFO  c.s.s.controller.SearchController - Search completed in 1ms
+2025-04-27 21:41:33 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m34s474ms).
+2025-04-27 21:59:44 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m40s488ms).
+2025-04-27 22:18:30 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m45s950ms).

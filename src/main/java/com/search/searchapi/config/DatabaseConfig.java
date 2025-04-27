@@ -81,7 +81,7 @@ public class DatabaseConfig {
         properties.setProperty("hibernate.hbm2ddl.auto", hibernateDdlAuto);
         properties.setProperty("hibernate.show_sql", showSql);
         properties.setProperty("hibernate.dialect", hibernateDialect);
-        properties.setProperty("hibernate.format_sql", "false");
+        properties.setProperty("hibernate.format_sql", "true");
         properties.setProperty("hibernate.jdbc.lob.non_contextual_creation", "true");
         
         em.setJpaProperties(properties);
