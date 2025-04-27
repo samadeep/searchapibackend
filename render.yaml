@@ -10,6 +10,7 @@ services:
         fromDatabase:
           name: searchapidb
           property: connectionString
+        transform: "jdbc:${value}"
       - key: DATABASE_USERNAME
         fromDatabase:
           name: searchapidb
