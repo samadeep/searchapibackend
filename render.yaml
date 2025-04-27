@@ -1,12 +1,10 @@
 services:
   - type: web
     name: searchapi
-    runtime: java
+    runtime: java-21
     buildCommand: ./mvnw clean package
     startCommand: java -jar target/searchapi-0.0.1-SNAPSHOT.jar
     envVars:
-      - key: JAVA_VERSION
-        value: 21
       - key: SPRING_PROFILES_ACTIVE
         value: production
       - key: DATABASE_URL
