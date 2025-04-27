@@ -1,14 +1,30 @@
 package com.search.searchapi.models;
 
+import jakarta.persistence.*;
 import java.util.Map;
 
+@Entity
+@Table(name = "search_items")
 public class SearchItem {
+    @Id
     private String id;
+    
+    @Column(nullable = false)
     private String title;
+    
+    @Column(columnDefinition = "TEXT")
     private String description;
+    
+    @Column(nullable = false)
     private String url;
+    
+    @Column(nullable = false)
     private String source;
+    
     private double score;
+    
+    @Column(columnDefinition = "CLOB")
+    @Convert(converter = JsonConverter.class)
     private Map<String, Object> metadata;
 
     // Getters and Setters
