@@ -16,7 +16,8 @@ COPY src src
 RUN ./mvnw clean package -DskipTests
 
 # Expose the port your app runs on
-EXPOSE 8080
+ENV PORT=8080
+EXPOSE $PORT
 
 # Command to run the application
-CMD ["java", "-jar", "target/searchapi-0.0.1-SNAPSHOT.jar"] 
+CMD ["sh", "-c", "java -jar target/searchapi-0.0.1-SNAPSHOT.jar --server.port=$PORT"] 
