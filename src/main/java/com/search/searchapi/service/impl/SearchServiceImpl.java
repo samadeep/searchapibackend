@@ -120,50 +120,59 @@ public class SearchServiceImpl implements SearchService {
         // Generate mock results based on the query
         List<SearchItem> results = new ArrayList<>();
         String query = request.getQuery().toLowerCase();
+        String sourcePrefix = source.toLowerCase();
         
         // Create mock results based on the query
         if (query.contains("java") || query.contains("spring")) {
-            results.add(createMockItem("1", "Java Spring Boot Tutorial", 
+            results.add(createMockItem(sourcePrefix + "_1", "Java Spring Boot Tutorial", 
                 "Learn how to build REST APIs with Spring Boot", 
                 "https://example.com/java-spring-boot", source, 0.95));
-            results.add(createMockItem("2", "Spring Framework Documentation", 
+            results.add(createMockItem(sourcePrefix + "_2", "Spring Framework Documentation", 
                 "Official documentation for Spring Framework", 
                 "https://example.com/spring-docs", source, 0.90));
         }
         
         if (query.contains("python") || query.contains("flask")) {
-            results.add(createMockItem("3", "Python Flask API Guide", 
+            results.add(createMockItem(sourcePrefix + "_3", "Python Flask API Guide", 
                 "Building web APIs with Flask framework", 
                 "https://example.com/python-flask", source, 0.88));
         }
         
         if (query.contains("react") || query.contains("angular")) {
-            results.add(createMockItem("4", "React vs Angular Comparison", 
+            results.add(createMockItem(sourcePrefix + "_4", "React vs Angular Comparison", 
                 "Comparison of popular frontend frameworks", 
                 "https://example.com/react-angular", source, 0.92));
         }
         
         if (query.contains("docker") || query.contains("kubernetes")) {
-            results.add(createMockItem("5", "Docker and Kubernetes Guide", 
+            results.add(createMockItem(sourcePrefix + "_5", "Docker and Kubernetes Guide", 
                 "Containerization and orchestration with Docker and Kubernetes", 
                 "https://example.com/docker-k8s", source, 0.85));
         }
         
         if (query.contains("machine") || query.contains("learning")) {
-            results.add(createMockItem("6", "Machine Learning Basics", 
+            results.add(createMockItem(sourcePrefix + "_6", "Machine Learning Basics", 
                 "Introduction to machine learning concepts", 
                 "https://example.com/ml-basics", source, 0.87));
         }
 
         // If no specific matches, add some generic results
         if (results.isEmpty()) {
-            results.add(createMockItem("7", "General Programming Guide", 
+            results.add(createMockItem(sourcePrefix + "_7", "General Programming Guide", 
                 "Comprehensive guide to programming concepts", 
                 "https://example.com/programming", source, 0.80));
-            results.add(createMockItem("8", "Software Development Best Practices", 
+            results.add(createMockItem(sourcePrefix + "_8", "Software Development Best Practices", 
                 "Best practices for software development", 
                 "https://example.com/best-practices", source, 0.75));
         }
+
+        // Add source-specific prefix to URLs
+        results.forEach(item -> {
+            String url = item.getUrl();
+            if (!url.contains(sourcePrefix)) {
+                item.setUrl(url.replace("example.com", sourcePrefix + ".example.com"));
+            }
+        });
 
         return results;
     }

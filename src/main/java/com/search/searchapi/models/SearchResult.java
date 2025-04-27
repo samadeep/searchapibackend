@@ -1,14 +1,27 @@
 package com.search.searchapi.models;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.List;
 import java.util.Map;
 
+@Schema(description = "Search result response")
 public class SearchResult {
+    @Schema(description = "List of search results")
     private List<SearchItem> items;
+
+    @Schema(description = "Total number of results found")
     private long totalResults;
+
+    @Schema(description = "Current page number")
     private int currentPage;
+
+    @Schema(description = "Total number of pages")
     private int totalPages;
+
+    @Schema(description = "Facet counts for requested fields")
     private Map<String, Map<String, Long>> facets;
+
+    @Schema(description = "Search execution time in milliseconds")
     private long executionTime;
 
     // Getters and Setters

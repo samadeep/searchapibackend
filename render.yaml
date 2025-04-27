@@ -1,33 +1,46 @@
 services:
+  # PostgreSQL Database
+  - type: postgres
+    name: searchapi-db
+    plan: free
+    ipAllowList: []
+    region: oregon
+    envVars:
+      - key: POSTGRES_DB
+        value: searchapi
+      - key: POSTGRES_USER
+        value: searchapi_user
+      - key: POSTGRES_PASSWORD
+        generateValue: true
+
+  # Web Service
   - type: web
     name: searchapi
-    env: docker
-    buildCommand: ./mvnw clean package
+    env: java
+    region: oregon
+    plan: free
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/*.jar
     envVars:
-      - key: SPRING_PROFILES_ACTIVE
-        value: production
       - key: DATABASE_URL
         fromDatabase:
-          name: searchapidb
+          name: searchapi-db
           property: connectionString
-        transform: "jdbc:${value}"
       - key: DATABASE_USERNAME
         fromDatabase:
-          name: searchapidb
+          name: searchapi-db
           property: user
       - key: DATABASE_PASSWORD
         fromDatabase:
-          name: searchapidb
+          name: searchapi-db
           property: password
       - key: ADMIN_USERNAME
         value: admin
       - key: ADMIN_PASSWORD
         generateValue: true
-    plan: free
-
-databases:
-  - name: searchapidb
-    databaseName: searchapi
-    user: searchapi
-    plan: free
-    ipAllowList: [] 
+      - key: H2_CONSOLE_ENABLED
+        value: false
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+    healthCheckPath: /actuator/health
+    autoDeploy: true 

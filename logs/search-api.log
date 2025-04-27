@@ -3683,3 +3683,234 @@ com.search.searchapi.exceptions.SourceUnavailableException: Search source BING i
 2025-04-27 17:16:04 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-04-27 17:16:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-04-27 17:16:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-27 19:16:36 [main] INFO  c.s.searchapi.SearchapiApplication - Starting SearchapiApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 35098 (/Users/samadeepsengupta/IdeaProjects/searchapi/target/searchapi-0.0.1-SNAPSHOT.jar started by samadeepsengupta in /Users/samadeepsengupta/IdeaProjects/searchapi)
+2025-04-27 19:16:36 [main] DEBUG c.s.searchapi.SearchapiApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-27 19:16:36 [main] INFO  c.s.searchapi.SearchapiApplication - The following 1 profile is active: "dev"
+2025-04-27 19:16:36 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.search.searchapi.SearchapiApplication]
+2025-04-27 19:16:36 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.search.searchapi.SearchapiApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:179)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.search.searchapi.SearchapiApplication.main(SearchapiApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'globalExceptionHandler' for bean class [com.search.searchapi.exception.GlobalExceptionHandler] conflicts with existing, non-compatible bean definition of same name and class [com.search.searchapi.exceptions.GlobalExceptionHandler]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:306)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165)
+	... 18 common frames omitted
+2025-04-27 19:18:01 [main] INFO  c.s.searchapi.SearchapiApplication - Starting SearchapiApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 35265 (/Users/samadeepsengupta/IdeaProjects/searchapi/target/searchapi-0.0.1-SNAPSHOT.jar started by samadeepsengupta in /Users/samadeepsengupta/IdeaProjects/searchapi)
+2025-04-27 19:18:01 [main] DEBUG c.s.searchapi.SearchapiApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-27 19:18:01 [main] INFO  c.s.searchapi.SearchapiApplication - The following 1 profile is active: "dev"
+2025-04-27 19:18:01 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.search.searchapi.SearchapiApplication]
+2025-04-27 19:18:01 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.search.searchapi.SearchapiApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:179)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.search.searchapi.SearchapiApplication.main(SearchapiApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91)
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53)
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'globalExceptionHandler' for bean class [com.search.searchapi.exception.GlobalExceptionHandler] conflicts with existing, non-compatible bean definition of same name and class [com.search.searchapi.exceptions.GlobalExceptionHandler]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:306)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165)
+	... 18 common frames omitted
+2025-04-27 19:19:30 [main] INFO  c.s.searchapi.SearchapiApplication - Starting SearchapiApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 35584 (/Users/samadeepsengupta/IdeaProjects/searchapi/target/searchapi-0.0.1-SNAPSHOT.jar started by samadeepsengupta in /Users/samadeepsengupta/IdeaProjects/searchapi)
+2025-04-27 19:19:30 [main] DEBUG c.s.searchapi.SearchapiApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-27 19:19:30 [main] INFO  c.s.searchapi.SearchapiApplication - The following 1 profile is active: "dev"
+2025-04-27 19:19:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-27 19:19:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2025-04-27 19:19:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-27 19:19:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-27 19:19:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-27 19:19:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-27 19:19:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1102 ms
+2025-04-27 19:19:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-27 19:19:31 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@163e8949
+2025-04-27 19:19:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-27 19:19:31 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/searchapi'
+2025-04-27 19:19:31 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-27 19:19:31 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-27 19:19:31 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-27 19:19:32 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-27 19:19:32 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-27 19:19:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-27 19:19:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 19:19:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-27 19:19:33 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-04-27 19:19:33 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@38e100ab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10b36d8a, org.springframework.security.web.context.SecurityContextHolderFilter@3304362e, org.springframework.security.web.header.HeaderWriterFilter@515b7335, org.springframework.web.filter.CorsFilter@318f47f1, org.springframework.security.web.authentication.logout.LogoutFilter@7ecca48, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5fa0943d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49318c2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31b4c003, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@900ffc4, org.springframework.security.web.access.ExceptionTranslationFilter@52539624, org.springframework.security.web.access.intercept.AuthorizationFilter@100d5018]
+2025-04-27 19:19:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-27 19:19:33 [main] INFO  c.s.searchapi.SearchapiApplication - Started SearchapiApplication in 3.333 seconds (process running for 3.63)
+2025-04-27 19:19:52 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-27 19:19:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-27 19:19:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-27 19:19:53 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 190 ms
+2025-04-27 19:20:07 [http-nio-8080-exec-10] INFO  c.s.s.controller.SearchController - Received GET search request - query: spring boot, page: 1, size: 10, sources: [GITHUB, STACKOVERFLOW], facets: [language, type]
+2025-04-27 19:20:07 [http-nio-8080-exec-10] INFO  c.s.s.service.impl.SearchServiceImpl - Starting search with request: com.search.searchapi.models.SearchRequest@6db11d8b
+2025-04-27 19:20:07 [http-nio-8080-exec-10] INFO  c.s.s.service.impl.SearchServiceImpl - Search completed successfully in 0ms
+2025-04-27 19:20:07 [http-nio-8080-exec-10] INFO  c.s.s.controller.SearchController - Search completed in 0ms
+2025-04-27 19:22:17 [main] INFO  c.s.searchapi.SearchapiApplication - Starting SearchapiApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 35930 (/Users/samadeepsengupta/IdeaProjects/searchapi/target/searchapi-0.0.1-SNAPSHOT.jar started by samadeepsengupta in /Users/samadeepsengupta/IdeaProjects/searchapi)
+2025-04-27 19:22:17 [main] DEBUG c.s.searchapi.SearchapiApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-27 19:22:17 [main] INFO  c.s.searchapi.SearchapiApplication - The following 1 profile is active: "dev"
+2025-04-27 19:22:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-27 19:22:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2025-04-27 19:22:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-27 19:22:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-27 19:22:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-27 19:22:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-27 19:22:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1115 ms
+2025-04-27 19:22:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-27 19:22:18 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76e6c070
+2025-04-27 19:22:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-27 19:22:18 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/searchapi'
+2025-04-27 19:22:18 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-27 19:22:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-27 19:22:18 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-27 19:22:18 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-27 19:22:18 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-27 19:22:19 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-27 19:22:19 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 19:22:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-27 19:22:19 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-04-27 19:22:19 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29897daf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63e54c66, org.springframework.security.web.context.SecurityContextHolderFilter@5e9a9683, org.springframework.security.web.header.HeaderWriterFilter@139da216, org.springframework.web.filter.CorsFilter@5246453e, org.springframework.security.web.authentication.logout.LogoutFilter@77d7d2d0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7c1f3125, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20a434a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@137a9d69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@299f9a81, org.springframework.security.web.access.ExceptionTranslationFilter@2c34ce24, org.springframework.security.web.access.intercept.AuthorizationFilter@684a34f4]
+2025-04-27 19:22:20 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-04-27 19:22:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 19:22:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-27 19:22:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-27 19:22:20 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-27 19:22:20 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-04-27 19:22:40 [main] INFO  c.s.searchapi.SearchapiApplication - Starting SearchapiApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 35962 (/Users/samadeepsengupta/IdeaProjects/searchapi/target/searchapi-0.0.1-SNAPSHOT.jar started by samadeepsengupta in /Users/samadeepsengupta/IdeaProjects/searchapi)
+2025-04-27 19:22:40 [main] DEBUG c.s.searchapi.SearchapiApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-27 19:22:40 [main] INFO  c.s.searchapi.SearchapiApplication - The following 1 profile is active: "dev"
+2025-04-27 19:22:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-27 19:22:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2025-04-27 19:22:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-27 19:22:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-27 19:22:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-27 19:22:41 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-27 19:22:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1053 ms
+2025-04-27 19:22:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-27 19:22:41 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66a82a13
+2025-04-27 19:22:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-27 19:22:41 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/searchapi'
+2025-04-27 19:22:41 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-27 19:22:41 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-27 19:22:41 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-27 19:22:41 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-27 19:22:41 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-27 19:22:42 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-27 19:22:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 19:22:42 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-27 19:22:42 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-04-27 19:22:42 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@94f79a7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@647d3279, org.springframework.security.web.context.SecurityContextHolderFilter@3bb6b9ab, org.springframework.security.web.header.HeaderWriterFilter@26c494d7, org.springframework.web.filter.CorsFilter@4b9a1be5, org.springframework.security.web.authentication.logout.LogoutFilter@1ae37be2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3119fcad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@139da216, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@608b74f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54b313d6, org.springframework.security.web.access.ExceptionTranslationFilter@66075347, org.springframework.security.web.access.intercept.AuthorizationFilter@5b5f06bb]
+2025-04-27 19:22:43 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-04-27 19:22:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 19:22:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-27 19:22:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-27 19:22:43 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-04-27 19:22:43 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-04-27 19:22:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 19:22:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-27 19:22:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-04-27 19:22:54 [main] INFO  c.s.searchapi.SearchapiApplication - Starting SearchapiApplication v0.0.1-SNAPSHOT using Java 21.0.6 with PID 36002 (/Users/samadeepsengupta/IdeaProjects/searchapi/target/searchapi-0.0.1-SNAPSHOT.jar started by samadeepsengupta in /Users/samadeepsengupta/IdeaProjects/searchapi)
+2025-04-27 19:22:54 [main] DEBUG c.s.searchapi.SearchapiApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-27 19:22:54 [main] INFO  c.s.searchapi.SearchapiApplication - The following 1 profile is active: "dev"
+2025-04-27 19:22:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-27 19:22:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2025-04-27 19:22:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-27 19:22:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-27 19:22:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-27 19:22:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-27 19:22:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1113 ms
+2025-04-27 19:22:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-04-27 19:22:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43e8f1c
+2025-04-27 19:22:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-04-27 19:22:55 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/searchapi'
+2025-04-27 19:22:55 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-27 19:22:55 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-04-27 19:22:55 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-04-27 19:22:56 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-27 19:22:56 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-27 19:22:56 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-27 19:22:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 19:22:56 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-27 19:22:56 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-04-27 19:22:57 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@198a653, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3119fcad, org.springframework.security.web.context.SecurityContextHolderFilter@56c7e2d1, org.springframework.security.web.header.HeaderWriterFilter@7927209f, org.springframework.web.filter.CorsFilter@6d7005e2, org.springframework.security.web.authentication.logout.LogoutFilter@25ee3cd6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@684a34f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31406eab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f6f2d91, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33a39d7e, org.springframework.security.web.access.ExceptionTranslationFilter@b2db8bc, org.springframework.security.web.access.intercept.AuthorizationFilter@39d44217]
+2025-04-27 19:22:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-27 19:22:57 [main] INFO  c.s.searchapi.SearchapiApplication - Started SearchapiApplication in 3.205 seconds (process running for 3.457)
+2025-04-27 19:23:07 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-27 19:23:07 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-27 19:23:07 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-27 19:23:07 [http-nio-8080-exec-1] INFO  c.s.s.controller.SearchController - Received GET search request - query: spring boot, page: 1, size: 10, sources: [GITHUB, STACKOVERFLOW], facets: [language, type]
+2025-04-27 19:23:07 [http-nio-8080-exec-1] INFO  c.s.s.service.impl.SearchServiceImpl - Starting search with request: com.search.searchapi.models.SearchRequest@10c1a2ce
+2025-04-27 19:23:07 [http-nio-8080-exec-1] INFO  c.s.s.service.impl.SearchServiceImpl - Search completed successfully in 0ms
+2025-04-27 19:23:07 [http-nio-8080-exec-1] INFO  c.s.s.controller.SearchController - Search completed in 0ms
+2025-04-27 19:23:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-27 19:23:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-04-27 19:23:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
