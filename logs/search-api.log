@@ -3679,3 +3679,4 @@ com.search.searchapi.exceptions.SourceUnavailableException: Search source BING i
 2025-04-27 16:20:01 [http-nio-8080-exec-4] INFO  c.s.s.service.impl.SearchServiceImpl - Starting search with request: com.search.searchapi.models.SearchRequest@1fe5e253
 2025-04-27 16:20:01 [http-nio-8080-exec-4] INFO  c.s.s.service.impl.SearchServiceImpl - Search completed successfully in 1ms
 2025-04-27 16:23:53 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s177ms).
+2025-04-27 16:32:25 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m31s911ms).

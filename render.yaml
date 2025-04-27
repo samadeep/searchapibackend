@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: searchapi
+    env: java
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/searchapi-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: JAVA_VERSION
+        value: 21
+      - key: SPRING_PROFILES_ACTIVE
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: searchapidb
+          property: connectionString
+    plan: free
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1
+
+databases:
+  - name: searchapidb
+    databaseName: searchapi
+    user: searchapi
+    plan: free
+    ipAllowList: [] 
