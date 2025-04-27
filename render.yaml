@@ -10,6 +10,14 @@ services:
         fromDatabase:
           name: searchapidb
           property: connectionString
+      - key: DATABASE_USERNAME
+        fromDatabase:
+          name: searchapidb
+          property: user
+      - key: DATABASE_PASSWORD
+        fromDatabase:
+          name: searchapidb
+          property: password
       - key: ADMIN_USERNAME
         value: admin
       - key: ADMIN_PASSWORD
